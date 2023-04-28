@@ -43,7 +43,7 @@ int main(){
 	
 	int money;
 	
-	cout<<"press [1] to Deposite the money"<<endl<<"press [2] toTransfer the money"<<endl<<"press [3] toTransfer the money"<<endl<<endl;
+	cout<<"press [1] to Deposite the money"<<endl<<"press [2] to Transfer the money"<<endl<<"press [3] to Transfer the money"<<endl<<endl;
     cin>>money;
 	
 	
