@@ -15,7 +15,7 @@ class SBS{
     
      public :
     
-    void setter(int Item_Number , char Item_Name[], char Quantity[], int Tax, int  Discount){
+    void setter(int Item_Number, char Item_Name[], char Quantity[], int Tax, int  Discount){
     	
     	this->Item_Number=Item_Number; 
     	strcpy(  this->Item_Name,Item_Name );
@@ -83,7 +83,29 @@ int main(){
 	cout<<endl<<endl;
 	
 			
+	SBS obj[8];
+	int i;
+for(i=0; i<=2; i++)
+{
+
+	
+	obj[i].setter();
+	
+}
+
+   int item_number;
+   
+   cout<<"enter your item number : ";
+   cin>>item_number;
+   
+   for(i=0; i<=2; i++){
+   	
+   	
+   	if(item_number==obj[i].cheak_itemnumber()){
+   		
+   		obj[i].getter();
+	   }
+   }
 
 }
-   
    
