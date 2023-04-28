@@ -1,46 +1,61 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Z2;
-class Z1{
+class highschool{
 	
-	private :
-		
+	int stu_name,stu_roll_no,stu_standard, stu_age,stu_contact, stu_edu_institute_name,stu_address;
 	
-		int n1=4;
-		int n2=1;
-	        friend void Z3(Z1,Z2);
 };
 
-class Z2{
-	
-	private :
-		
-	
-		int n1=2;
-		int n2=2;
-	        
-		
-		friend void Z3(Z1,Z2);
-};
+class college{
+public:
 
-void Z3(Z1 a, Z2 b){
-	
+    string stu_name, stu_roll_no,stu_standard, stu_age,stu_contact, stu_edu_institute_name,stu_address;
     
-    int c1=a.n1+b.n1;
-	int c2=a.n2+b.n2;
-     
-    cout<<c1<<endl;
-    cout<<c2<<endl;
     
-    }
-
-int main(){
-
-    Z1 obj1;
-    Z2 obj2;
-         
-	Z3(obj1, obj2);
-	
+   static int infor;
+   static void getter() {
+   college student;
+      
+	student.stu_name;
+        student.stu_roll_no;
+        student.stu_standard;
+        student.stu_age;
+        student.stu_contact;
+        student.stu_edu_institute_name;
+        student.stu_address;
 }
+ 
 
+    static void setter() {
+        
+       college student;
+      
+      cout<<"student name : ";
+      cin>> student.stu_name;
+	  
+      cout<<"student rollno : ";
+      cin>> student.stu_roll_no;
+	  
+      cout<<"student standard : ";
+      cin>> student.stu_standard;
+	  
+      cout<<"student age : ";
+      cin>> student.stu_age;
+	  
+      cout<<"student contact : ";
+      cin>> student.stu_contact;
+	  
+      cout<<"student contact : ";
+      cin>> student.stu_contact;
+	  
+}
+ 
+};
+
+int college ::infor = 2; 
+
+int main() {
+    college::setter();
+    return 0;
+}
