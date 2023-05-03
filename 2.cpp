@@ -1,37 +1,56 @@
-#include<iostream>
+#include <iostream>
+#include<string.h>
 using namespace std;
 
 class Student {
-   public:
-      char name[10];
-      int rollNumber;
-      float marks;
+   private:
+   	
+      char name[22];
+      int age;
+      
+	  public:
+      void setDetails(char n[], int a) {
+         
+		 strcpy(name,n);
+         age = a;
+         }
+         
+      void printDetails() {
+         
+		 cout<<"Name: "<<name<<endl;
+         cout<<"Age: "<<age<<endl;
+         
+      }
 };
 
-class Student_Details {
+class College {
+   
+   private:
+      char collegeName[22];
+      Student student;
+   
    public:
-      void Details(Student& s) {
-
-         cout<<"Enter student name: ";
-         cin>>s.name;
-         cout<<"Enter student roll number: ";
-         cin>>s.rollNumber;
-         cout<<"Enter student marks: ";
-         cin>>s.marks;
+   	
+      void setCollegeName(char c[]) {
+         strcpy(collegeName,c);
       }
-
-      void printDetails(Student& s) {
-         cout<<"Name: "<<s.name<<endl;
-         cout<<"Roll Number: "<<s.rollNumber<<endl;
-         cout<<"Marks: "<<s.marks<<endl;
+      
+      void setStudentDetails(char n[], int a) {
+         student.setDetails(n, a);
+      }
+      
+      void printCollegeDetails() {
+         cout << "College Name: " << collegeName << endl;
+         student.printDetails();
       }
 };
 
 int main() {
-   Student obj;
-   Student_Details obj1;
-   obj1.Details(obj);
-   details.printDetails(obj);
+	
+   College obj;
+   obj.setCollegeName("XYZ College");
+   obj.setStudentDetails("shresha Doe", 20);
+   obj.printCollegeDetails();
+
    return 0;
 }
-
