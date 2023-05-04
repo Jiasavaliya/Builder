@@ -40,7 +40,7 @@ class RRS{
 		
 		}
 		
-		int cheak_Trainnumber(){
+		int check_Trainnumber(){
 			
 			return t_n;
 		} 
@@ -65,7 +65,7 @@ int main(){
    for(i=0; i<=2; i++){
    	
    	
-   	if(train_number==obj[i].cheak_Trainnumber()){
+   	if(train_number==obj[i].check_Trainnumber()){
    		
    		obj[i].get();
 	   }
