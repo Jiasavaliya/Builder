@@ -6,9 +6,9 @@ class student{
 
    private :
    	
-   	int id;
-	char name[33];
-	char role[22];
+    int id;
+    char name[33];
+    char role[22];
     int salary;
     char experience[22];
     char address[52];
@@ -31,9 +31,9 @@ class student{
 
 	void getter(){
 		
-		cout<<id<<endl;
-		cout<<name<<endl;
-		cout<<role<<endl;
+	    cout<<id<<endl;
+	    cout<<name<<endl;
+	    cout<<role<<endl;
 	    cout<<salary<<endl;
 	    cout<<experience<<endl;
 	    cout<<address<<endl;
@@ -47,7 +47,7 @@ int main(){
 	
 	student obj1,obj2, obj3, obj4, obj5; 
 	
-    char name[50];	
+        char name[50];	
 	char experience[50];
 	char address[50];
 	char email[50];		
