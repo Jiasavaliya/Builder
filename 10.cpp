@@ -15,19 +15,25 @@ class SBS{
     
      public :
     
-    void setter(int Item_Number, char Item_Name[], char Quantity[], int Tax, int  Discount){
+    void setter(){
     	
-    	this->Item_Number=Item_Number; 
-    	strcpy(  this->Item_Name,Item_Name );
-    	strcpy(  this->Quantity,Quantity );
-    	this->Tax=Tax;
-    	this->Discount=Discount;	
-}
+    	cout<<"Enter Item Number : ";
+    	cin>>Item_Number;
+    	cout<<"Enter Item Name : ";
+    	cin>>Item_Name;
+    	cout<<"Enter Quantity : ";
+    	cin>>Quantity;
+    	cout<<"Tax : ";
+    	cin>>Tax;
+    	cout<<"Discount : ";
+    	cin>>Discount;
+    	
+    	}
 
 void getter(){
 		
-		cout<<Item_Number<<endl;
-		cout<<Item_Name<<endl;
+     		cout<<Item_Number<<endl;
+	    	cout<<Item_Name<<endl;
 		cout<<Quantity<<endl;
 	        cout<<Tax<<endl;
 	        cout<<Discount<<endl;
@@ -59,32 +65,6 @@ int main(){
 	    cout<<"Login failed. Please try again"<<endl;
 }
 	
-	SBS obj1,obj2, obj3, obj4, obj5; 
-	
-        char Item_Name[50];	
-	char Quantity[50];
-	
-	obj1.setter(12,"Item Name: bag","Quantity : 1",10,30);
-	obj1.getter();
-	cout<<endl<<endl;
-	
-	obj2.setter(21,"Item Name: clothes","Quantity : 3",5,20);
-	obj2.getter();
-	cout<<endl<<endl;
-
-	obj3.setter(4,"Item Name: mobail","Quantity : 4",15,50);
-	obj3.getter();
-	cout<<endl<<endl;
-	
-	obj4.setter(55,"Item Name: t.v","Quantity : 1",20,30);
-	obj4.getter();
-	cout<<endl<<endl;
-	
-	obj5.setter(100,"Item Name: watch","Quantity : 3",5,40);
-	obj5.getter();
-	cout<<endl<<endl;
-	
-			
 	SBS obj[8];
 	int i;
 
@@ -98,7 +78,7 @@ int main(){
 
    int item_number;
    
-   cout<<"enter your item number : ";
+   cout<<"enter (check) your item number : ";
    cin>>item_number;
    
    for(i=0; i<=2; i++){
