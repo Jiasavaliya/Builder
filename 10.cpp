@@ -38,7 +38,7 @@ void getter(){
 	        cout<<Tax<<endl;
 	        cout<<Discount<<endl;
 }
-	    	int cheak_itemnumber(){
+	    	int check_itemnumber(){
 			
 			return Item_Number;
 }
@@ -84,7 +84,7 @@ int main(){
    for(i=0; i<=2; i++){
    	
    	
-   	if(item_number==obj[i].cheak_itemnumber()){
+   	if(item_number==obj[i].check_itemnumber()){
    		
    		obj[i].getter();
 	   }
