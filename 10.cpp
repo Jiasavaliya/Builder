@@ -10,8 +10,8 @@ class SBS{
    	int Item_Number;
 	char Item_Name[33];
 	char Quantity[22];
-    int Tax;
-    int Discount;
+        int Tax;
+        int Discount;
     
      public :
     
@@ -29,8 +29,8 @@ void getter(){
 		cout<<Item_Number<<endl;
 		cout<<Item_Name<<endl;
 		cout<<Quantity<<endl;
-	    cout<<Tax<<endl;
-	    cout<<Discount<<endl;
+	        cout<<Tax<<endl;
+	        cout<<Discount<<endl;
 }
 	    	int cheak_itemnumber(){
 			
@@ -40,7 +40,7 @@ void getter(){
 };
 int main(){
 	
-	char email[50];
+    char email[50];
     char password[20];
     
     char correctEmail[] = "abc22@gmail.com";
@@ -52,14 +52,16 @@ int main(){
     cin>>password;
     
     if(strcmp(email, correctEmail) == 0 && strcmp(password, correctPassword) == 0) {
-        cout<<"Login successful!"<<endl;
+        
+	    cout<<"Login successful!"<<endl;
     } else {
-        cout<<"Login failed. Please try again"<<endl;
+    
+	    cout<<"Login failed. Please try again"<<endl;
 }
 	
 	SBS obj1,obj2, obj3, obj4, obj5; 
 	
-    char Item_Name[50];	
+        char Item_Name[50];	
 	char Quantity[50];
 	
 	obj1.setter(12,"Item Name: bag","Quantity : 1",10,30);
@@ -85,7 +87,8 @@ int main(){
 			
 	SBS obj[8];
 	int i;
-for(i=0; i<=2; i++)
+
+	for(i=0; i<=2; i++)
 {
 
 	
