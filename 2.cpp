@@ -9,15 +9,16 @@ class Student {
       int age;
       
 	  public:
-      void setDetails(char n[], int a) {
+
+	void setDetails(char n[], int a) {
          
-		 strcpy(name,n);
+        strcpy(name,n);
          age = a;
          }
          
       void printDetails() {
          
-		 cout<<"Name: "<<name<<endl;
+	 cout<<"Name: "<<name<<endl;
          cout<<"Age: "<<age<<endl;
          
       }
@@ -26,21 +27,26 @@ class Student {
 class College {
    
    private:
+
       char collegeName[22];
       Student student;
    
    public:
    	
       void setCollegeName(char c[]) {
-         strcpy(collegeName,c);
+      
+	      strcpy(collegeName,c);
+      
       }
       
       void setStudentDetails(char n[], int a) {
-         student.setDetails(n, a);
+         
+	      student.setDetails(n, a);
       }
       
       void printCollegeDetails() {
-         cout << "College Name: " << collegeName << endl;
+         
+	      cout << "College Name: " << collegeName << endl;
          student.printDetails();
       }
 };
