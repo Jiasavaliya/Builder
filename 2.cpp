@@ -47,7 +47,8 @@ class College {
       void printCollegeDetails() {
          
 	      cout << "College Name: " << collegeName << endl;
-         student.printDetails();
+         
+	      student.printDetails();
       }
 };
 
