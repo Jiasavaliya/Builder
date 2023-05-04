@@ -19,26 +19,26 @@ class student{
     
     void setter(int id, char name[], char role[], int salary, char  experience[], char address[], char email[],char contact[]){
     	
-    	this->id=id; 
-    	strcpy(  this->name,name );
-    	strcpy(  this->role,role );
-    	this->salary=salary;
-    	strcpy(  this->experience,experience );
-    	strcpy(  this->address,address );
-    	strcpy(  this->email,email );
-       	strcpy(  this->contact,contact );	 
+    this->id=id; 
+    strcpy(  this->name,name );
+    strcpy(  this->role,role );
+    this->salary=salary;
+    strcpy(  this->experience,experience );
+    strcpy(  this->address,address );
+    strcpy(  this->email,email );
+    strcpy(  this->contact,contact );	 
 	}
 
 	void getter(){
 		
-	    cout<<id<<endl;
-	    cout<<name<<endl;
-	    cout<<role<<endl;
-	    cout<<salary<<endl;
-	    cout<<experience<<endl;
-	    cout<<address<<endl;
-	    cout<<email<<endl;
-	    cout<<contact;
+    cout<<id<<endl
+    cout<<name<<endl;
+    cout<<role<<endl;
+    cout<<salary<<endl;
+    cout<<experience<<endl;
+    cout<<address<<endl;
+    cout<<email<<endl;
+    cout<<contact;
 	    
 	}
 };
